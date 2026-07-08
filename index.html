@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>WEATHERWISE - Chech on the Weather at Any Time</title>
+</head>
+
+<body>
+    <header id="header">
+
+        <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+
+            <a href="/" class="navbar-brand"><img src="" alt="Weather Wise Logo"></a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent"
+                aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+                <ul class="navbar-nav">
+
+                    <li class="nav-item dropdown">
+
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Forecast
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="/forecast.html?param=daily" name="daily-cast">Daily</a>
+                            <a class="dropdown-item" href="/forecast.html?param=hourly" name="hourly-cast">Hourly</a>
+                            <a class="dropdown-item" href="/forecast.html?param=monthly" name="monthly-cast">Monthly</a>
+                        </div>
+
+                    </li>
+                    <li class="nav-item">
+                        <a href="/news.html" class="nav-link">Weather News</a>
+                    </li>
+                </ul>
+
+                <form class="form-inline" action="#">
+
+                    <div class="search-wrapper position-relative">
+
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search City, ZipCode"
+                            autocomplete="off">
+                        <button class="btn btn-success" type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg>
+                        </button>
+
+                        <div class="search-results-dropdown">
+
+                        </div>
+
+                    </div>
+                </form>
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <h1>Hello World</h1>
+
+
+    <!-- Required Scripts for better Bootstrap Component Functionality -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

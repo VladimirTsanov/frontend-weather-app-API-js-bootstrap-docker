@@ -1,0 +1,42 @@
+.search-wrapper {
+    position: relative;
+}
+
+.search-results-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #fff;
+    border: 1px solid #ced4da;
+    border-top: none;
+    z-index: 1000;
+    display: none;
+}
+
+@media (min-width: 576px) {
+    #header .navbar {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        align-items: center;
+    }
+
+    #header .navbar-collapse {
+        display: contents !important;
+    }
+
+    #header .navbar-nav {
+        grid-column: 2;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #header .form-inline {
+        grid-column: 3;
+        justify-self: end;
+    }
+
+    #header .navbar-brand {
+        grid-column: 1;
+    }
+}
